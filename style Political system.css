@@ -1,0 +1,138 @@
+body {
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  pointer-events: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
+  background:url("bilder/licensed-image.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Header */
+header {
+  background: url("bilder/welcometosouthernnevadahero.jpg") no-repeat center center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background 0.2s;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Content section */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.left {
+  flex: 2;
+  text-align: center;
+}
+
+.left img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.left p {
+  margin-top: 10px;
+}
+
+.left a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.explanation {
+  background: #f5d6f5;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.video-link {
+  margin-top: 15px;
+  background: #fff;
+  border: 2px solid #000;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  max-width: fit-content;
+}
+
+footer {
+  text-align: center;
+  padding: 8px 20px;
+  margin-top: 24px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  min-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  color: #222;
+}
+
+footer a {
+  color: rgb(10, 12, 167);
+  text-decoration: none;
+}
