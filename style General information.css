@@ -5,6 +5,7 @@ body {
   background-color: #f8f8f8;
   background:url("bilder/licensed-image.jpg") no-repeat center center fixed;
   background-size: cover;
+  
 }
 body::before {
   content: "";

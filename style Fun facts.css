@@ -3,7 +3,7 @@ body {
   z-index: 1;
 }
 
-body::before {
+body:before {
   content: "";
   position: fixed;
   top: 0;

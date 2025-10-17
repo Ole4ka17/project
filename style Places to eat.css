@@ -137,8 +137,8 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
-  .video {
-  background: #ffffff;
+.video {
+  background: rgba(255, 255, 255, 0.5);
   padding: 75px;
   border-radius: 12px;
   display: flex;
@@ -147,13 +147,13 @@ h1 {
   width: 258%;
   max-width: none;
   margin: 0 0 0 0;
-  
+
 
 }
 
 .video-btn {
   margin-top: 15px;
-  background: #ffef3c;
+  background: #cbd4f4;
   border: 2px solid #000;
   padding: 8px 15px;
   border-radius: 20px;
